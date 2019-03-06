@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> SQL > MODEL > VIEW </title>
+    <style type="text/css"></style>
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="col-md-12 text-center">
+            <h1>SQL > MODEL > VIEW</h1>   
+            <button type="button" class="btn btn-condensed btn-info" onclick="GetLines()"> Iniciar </button>
+        </div>
+        <div class="row" style="padding-top: 15px">
+            <div class="col-md-6 col-sm-6 col-lg-6">
+                <textarea class="form-control" id="sql" placeholder="Cole a estrutura da tabela aqui" rows="10"></textarea>
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6">
+                <textarea class="form-control" disabled="true" id="model" placeholder="Aguardando..." rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" style="padding-top: 15px">
+                <button type="button" disabled="true" id="btndados" class="btn btn-condensed btn-warning" onclick="InsertData()">Insert Data</button>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12 text-center" style="padding-top: 15px">
+                <button type="button" disabled="true" id="allrequired" class="btn btn-sm btn-info" onclick="AddDataAnnotationsAll(1)">All Required</button>
+                <button type="button" disabled="true" id="alltextlenght" class="btn btn-sm btn-primary" onclick="AddDataAnnotationsAll(2)">All TextLenght </button>
+                <button type="button" disabled="true" id="allname" class="btn btn-sm btn-danger" onclick="AddDataAnnotationsAll(3)">All Name</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" id="modeledit">
+
+            </div>
+            <div class="col-md-6" id="viewedit">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.2.1/popper.min.js" type="text/javascript"></script>
+    <link href="bootstrap-4.2.1/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css" />
+    <script src="bootstrap-4.2.1/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bootstrap-4.2.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./SqlToModel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="bootstrap-4.2.1/docs.min.js" type="text/javascript"></script>
+</body>
+</html>
